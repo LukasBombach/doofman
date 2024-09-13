@@ -14,6 +14,7 @@ use heapless::spsc::Queue;
 use log::*;
 use std::sync::{Arc, Mutex};
 use std::time::{Duration, SystemTime};
+use dotenv::dotenv;
 
 use embedded_graphics::{
     mono_font::{ascii::FONT_6X10, MonoTextStyle},
@@ -24,6 +25,8 @@ use embedded_graphics::{
 use st7789::Orientation;
 
 fn main() -> Result<()> {
+    dotenv().ok();
+
     esp_idf_sys::link_patches();
     esp_idf_svc::log::EspLogger::initialize_default();
 
