@@ -4,15 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-esp-idf-sys = { version = "0.33.0", features = ["binstart"] }
-esp-idf-hal = "0.33.0"
-esp-idf-svc = "0.33.0"
+esp-idf-sys = { version = "0.35.0", features = ["binstart"] }
+esp-idf-hal = "0.44.1"
+esp-idf-svc = "0.49.1"
 embedded-svc = "0.13.0"
 embedded-hal = "0.2.7"
 anyhow = "1.0"
 log = "0.4"
 heapless = "0.7"
-display_interface = "0.4"
+display-interface = "0.5"
 embedded-graphics = "0.7"
 st7789 = "0.4"
 dotenv = "0.15.0"

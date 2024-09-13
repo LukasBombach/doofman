@@ -1,0 +1,13 @@
+[build]
+target = "xtensa-esp32-none-elf"
+
+[unstable]
+build-std = ["core", "compiler_builtins", "alloc"]
+
+[target.xtensa-esp32-none-elf]
+runner = "espflash run"
+
+rustflags = [
+    "-C", "opt-level=2",
+    "-C", "embed-bitcode=yes",
+]

@@ -1,0 +1,4 @@
+[toolchain]
+channel = "esp"
+targets = ["xtensa-esp32-none-elf"]
+components = ["rust-src", "rust-std", "llvm-tools-preview"]
